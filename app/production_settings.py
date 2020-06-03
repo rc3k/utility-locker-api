@@ -1,7 +1,9 @@
-import os
 from .base_settings import *
+import os
 
 DEBUG = False
+
+SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 DATABASES = {
     'default': {
@@ -13,5 +15,3 @@ DATABASES = {
         'PORT': os.environ['RDS_PORT'],
     }
 }
-
-SECRET_KEY = '8z)tf@qbcy%0j^50r)l7b)i&q(3p91kp^#bhsy(nb@*j@$(@ft'
