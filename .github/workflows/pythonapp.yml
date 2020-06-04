@@ -1,4 +1,4 @@
-name: Django Products API
+name: Django lint and test
 on: [push]
 jobs:
   build:
@@ -29,5 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install -r requirements.dev.txt
+    - name: Lint
+      run: pycodestyle --ignore=E501 .
     - name: Run tests
       run: pytest . --create-db
