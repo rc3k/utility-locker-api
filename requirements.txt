@@ -7,7 +7,7 @@
 asgiref==3.2.7            # via django
 django-cors-headers==3.3.0  # via -r requirements.in
 django-money==1.1         # via -r requirements.in
-django==3.0.6             # via -r requirements.in, django-cors-headers, django-money, djangorestframework
+django==3.0.7             # via -r requirements.in, django-cors-headers, django-money, djangorestframework
 djangorestframework==3.11.0  # via -r requirements.in
 psycopg2==2.8.5           # via -r requirements.in
 py-moneyed==0.8.0         # via django-money
